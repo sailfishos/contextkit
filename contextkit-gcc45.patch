@@ -1,0 +1,10 @@
+--- a/libcontextsubscriber/update-contextkit-providers/update-contextkit-providers.cpp
++++ b/libcontextsubscriber/update-contextkit-providers/update-contextkit-providers.cpp
+@@ -28,6 +28,7 @@
+ #include "cdbwriter.h"
+ #include "fcntl.h"
+ #include "infobackend.h"
++#include <sys/stat.h>
+ 
+ /*!
+    \page UpdatingContextProviders

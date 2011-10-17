@@ -1,0 +1,49 @@
+diff -ruN --exclude='*~' contextkit-0.5.39.orig/configure.ac contextkit-0.5.39/configure.ac
+--- contextkit-0.5.39.orig/configure.ac	2011-09-29 13:33:56.817135934 +0300
++++ contextkit-0.5.39/configure.ac	2011-09-29 13:35:03.346544073 +0300
+@@ -111,13 +111,13 @@
+ # The user only needs to have the documentation tools (asciidoc, etc.)
+ # if she checked out the master Git branch, instead of using a release
+ # tag or a release tarball, as she should.
+-if test "$missing_deps_BUILD_DOCS" != "" -a \! -f ${srcdir}/spec/context-properties.html
+-then
+-	missing_deps=`echo $missing_deps_BUILD_DOCS | cut -c3-`
+-	AC_MSG_FAILURE([
+-Building from Git, but not all of the required doctools are available: $missing_deps
+-Please use a release tag instead or install the required tools!])
+-fi
++#if test "$missing_deps_BUILD_DOCS" != "" -a \! -f ${srcdir}/spec/context-properties.html
++#then
++#	missing_deps=`echo $missing_deps_BUILD_DOCS | cut -c3-`
++#	AC_MSG_FAILURE([
++#Building from Git, but not all of the required doctools are available: $missing_deps
++#Please use a release tag instead or install the required tools!])
++#fi
+ 
+ AC_OUTPUT
+ 
+diff -ruN --exclude='*~' contextkit-0.5.39.orig/Makefile.am contextkit-0.5.39/Makefile.am
+--- contextkit-0.5.39.orig/Makefile.am	2011-09-29 13:33:56.792135405 +0300
++++ contextkit-0.5.39/Makefile.am	2011-09-29 13:45:33.410937987 +0300
+@@ -7,7 +7,6 @@
+ 	libcontextprovider \
+ 	libcontextsubscriber \
+ 	spec \
+-	doc \
+ 	python \
+ 	tools \
+ 	common
+diff -ruN --exclude='*~' contextkit-0.5.39.orig/spec/Makefile.am contextkit-0.5.39/spec/Makefile.am
+--- contextkit-0.5.39.orig/spec/Makefile.am	2011-09-29 13:33:56.819135976 +0300
++++ contextkit-0.5.39/spec/Makefile.am	2011-09-29 13:42:53.650539524 +0300
+@@ -1,7 +1,7 @@
+-dist_noinst_DATA = context.valid.stamp $(INTROSPECT)
++#dist_noinst_DATA = context.valid.stamp $(INTROSPECT)
+ 
+-htmldir = $(datadir)/doc/contextkit-doc/html/
+-dist_html_DATA = context-properties.html core-types.html contextkit.html context-provider-schema.html
++#htmldir = $(datadir)/doc/contextkit-doc/html/
++#dist_html_DATA = context-properties.html core-types.html contextkit.html context-provider-schema.html
+ 
+ contextdir = $(datadir)/contextkit/
+ dist_context_DATA = core.context
