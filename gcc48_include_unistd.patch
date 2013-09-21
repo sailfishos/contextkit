@@ -1,0 +1,10 @@
+--- a/common/logging.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/common/logging.cpp	2013-09-21 18:54:21.909101239 +0200
+@@ -23,6 +23,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <fcntl.h>
++#include <unistd.h>
+ #include <QDateTime>
+ #include <QFile>
+ 

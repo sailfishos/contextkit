@@ -16,6 +16,7 @@ Source0:    %{name}-%{version}.tar.bz2
 Source100:  contextkit.yaml
 Patch0:     contextkit-gcc45.patch
 Patch1:     contextkit-0.5.39-ignore-docs.patch
+Patch2:     gcc48_include_unistd.patch
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires:  pkgconfig(QJson)
@@ -80,6 +81,8 @@ ContextKit libraries.
 %patch0 -p1
 # contextkit-0.5.39-ignore-docs.patch
 %patch1 -p1
+# gcc48_include_unistd.patch
+%patch2 -p1
 # >> setup
 # << setup
 

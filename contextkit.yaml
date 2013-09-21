@@ -10,6 +10,7 @@ Sources:
 Patches:
     - contextkit-gcc45.patch
     - contextkit-0.5.39-ignore-docs.patch
+    - gcc48_include_unistd.patch
 Description: |
     This is ContextKit, a framework for collecting contextual information from
     the bowels of the system, cleaning them up and offering them through a simple
