@@ -1,6 +1,6 @@
 diff -Naur a/contextkit-0.5.39/common/logging.cpp b/contextkit-0.5.39/common/logging.cpp
 --- a/contextkit-0.5.39/common/logging.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/common/logging.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/common/logging.cpp	2013-12-12 16:34:41.214407238 +0100
 @@ -23,6 +23,7 @@
  #include <stdio.h>
  #include <stdlib.h>
@@ -11,7 +11,7 @@ diff -Naur a/contextkit-0.5.39/common/logging.cpp b/contextkit-0.5.39/common/log
  
 diff -Naur a/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp b/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp
 --- a/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp	2013-12-12 16:34:41.214407238 +0100
 @@ -23,6 +23,8 @@
  #include "propertyproxy.h"
  #include "sconnect.h"
@@ -23,7 +23,7 @@ diff -Naur a/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher
  #include <contexttyperegistryinfo.h>
 diff -Naur a/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp b/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp
 --- a/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp	2013-12-12 16:34:41.214407238 +0100
 @@ -21,6 +21,8 @@
  
  #include "commandwatcher.h"
@@ -35,7 +35,7 @@ diff -Naur a/contextkit-0.5.39/libcontextprovider/context-provide/context-provid
  #include <QStringList>
 diff -Naur a/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c b/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c
 --- a/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c	2013-12-12 16:34:41.218407265 +0100
 @@ -22,6 +22,8 @@
  /* for dprintf */
  #define _GNU_SOURCE
@@ -47,7 +47,7 @@ diff -Naur a/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovider
  #include <glib.h>
 diff -Naur a/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp b/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp
 --- a/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -1,5 +1,7 @@
  #include "commandwatcher.h"
  
@@ -58,7 +58,7 @@ diff -Naur a/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.c
  
 diff -Naur a/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp b/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp
 --- a/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -19,6 +19,8 @@
   *
   */
@@ -70,7 +70,7 @@ diff -Naur a/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp b/con
  #include "commandwatcher.h"
 diff -Naur a/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp b/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp
 --- a/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -19,6 +19,8 @@
   *
   */
@@ -82,7 +82,7 @@ diff -Naur a/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compa
  #include <QDebug>
 diff -Naur a/contextkit-0.5.39/libcontextsubscriber/src/cdbreader.cpp b/contextkit-0.5.39/libcontextsubscriber/src/cdbreader.cpp
 --- a/contextkit-0.5.39/libcontextsubscriber/src/cdbreader.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextsubscriber/src/cdbreader.cpp	2013-12-12 15:47:28.732361731 +0100
++++ b/contextkit-0.5.39/libcontextsubscriber/src/cdbreader.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -19,6 +19,7 @@
   *
   */
@@ -93,7 +93,7 @@ diff -Naur a/contextkit-0.5.39/libcontextsubscriber/src/cdbreader.cpp b/contextk
  #include <fcntl.h>
 diff -Naur a/contextkit-0.5.39/libcontextsubscriber/src/cdbwriter.cpp b/contextkit-0.5.39/libcontextsubscriber/src/cdbwriter.cpp
 --- a/contextkit-0.5.39/libcontextsubscriber/src/cdbwriter.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextsubscriber/src/cdbwriter.cpp	2013-12-12 15:49:48.185053230 +0100
++++ b/contextkit-0.5.39/libcontextsubscriber/src/cdbwriter.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -19,6 +19,9 @@
   *
   */
@@ -106,7 +106,7 @@ diff -Naur a/contextkit-0.5.39/libcontextsubscriber/src/cdbwriter.cpp b/contextk
  #include <stdlib.h>
 diff -Naur a/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp b/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp
 --- a/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -96,6 +96,8 @@
      availability, etc.) you should consult the \ref Introspection API.
  */
@@ -118,7 +118,7 @@ diff -Naur a/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp b/co
  #include "sconnect.h"
 diff -Naur a/contextkit-0.5.39/libcontextsubscriber/unit-tests/cdb/cdbunittest.cpp b/contextkit-0.5.39/libcontextsubscriber/unit-tests/cdb/cdbunittest.cpp
 --- a/contextkit-0.5.39/libcontextsubscriber/unit-tests/cdb/cdbunittest.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/libcontextsubscriber/unit-tests/cdb/cdbunittest.cpp	2013-12-12 15:48:42.476727396 +0100
++++ b/contextkit-0.5.39/libcontextsubscriber/unit-tests/cdb/cdbunittest.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -19,6 +19,9 @@
   *
   */
@@ -129,9 +129,20 @@ diff -Naur a/contextkit-0.5.39/libcontextsubscriber/unit-tests/cdb/cdbunittest.c
  #include <QtTest/QtTest>
  #include <QtCore>
  #include <fcntl.h>
+diff -Naur a/contextkit-0.5.39/libcontextsubscriber/update-contextkit-providers/update-contextkit-providers.cpp b/contextkit-0.5.39/libcontextsubscriber/update-contextkit-providers/update-contextkit-providers.cpp
+--- a/contextkit-0.5.39/libcontextsubscriber/update-contextkit-providers/update-contextkit-providers.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/libcontextsubscriber/update-contextkit-providers/update-contextkit-providers.cpp	2013-12-12 16:35:00.030500544 +0100
+@@ -23,6 +23,7 @@
+ #include <QDir>
+ #include <stdlib.h>
+ #include <sys/stat.h>
++#include <unistd.h>
+ #include "contextregistryinfo.h"
+ #include "contextpropertyinfo.h"
+ #include "contextproviderinfo.h"
 diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h b/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h
 --- a/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h	2013-12-12 16:34:41.218407265 +0100
 @@ -3,6 +3,8 @@
  
  #include <contextproperty.h>
@@ -143,7 +154,7 @@ diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h
  #include <QDebug>
 diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h
 --- a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h	2013-12-12 16:34:41.218407265 +0100
 @@ -3,6 +3,8 @@
  
  #include <contextproperty.h>
@@ -155,7 +166,7 @@ diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscriptio
  
 diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp
 --- a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -2,6 +2,8 @@
  
  #include "thread.h"
@@ -167,7 +178,7 @@ diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscriptio
  
 diff -Naur a/contextkit-0.5.39/sandbox/wait-test/main.cpp b/contextkit-0.5.39/sandbox/wait-test/main.cpp
 --- a/contextkit-0.5.39/sandbox/wait-test/main.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/contextkit-0.5.39/sandbox/wait-test/main.cpp	2013-12-12 15:45:14.971698441 +0100
++++ b/contextkit-0.5.39/sandbox/wait-test/main.cpp	2013-12-12 16:34:41.218407265 +0100
 @@ -1,3 +1,5 @@
 +#include <unistd.h>
 +
