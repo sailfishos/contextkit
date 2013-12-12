@@ -82,7 +82,7 @@ ContextKit libraries.
 # contextkit-0.5.39-ignore-docs.patch
 %patch1 -p1
 # gcc48_include_unistd.patch
-%patch2 -p1
+%patch2 -p2
 # >> setup
 # << setup
 
