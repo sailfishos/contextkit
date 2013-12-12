@@ -1,5 +1,6 @@
---- a/common/logging.cpp	2011-08-04 12:59:59.000000000 +0200
-+++ b/common/logging.cpp	2013-09-21 18:54:21.909101239 +0200
+diff -Naur a/contextkit-0.5.39/common/logging.cpp b/contextkit-0.5.39/common/logging.cpp
+--- a/contextkit-0.5.39/common/logging.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/common/logging.cpp	2013-12-12 14:39:27.360123292 +0100
 @@ -23,6 +23,7 @@
  #include <stdio.h>
  #include <stdlib.h>
@@ -8,3 +9,131 @@
  #include <QDateTime>
  #include <QFile>
  
+diff -Naur a/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp b/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp
+--- a/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/libcontextprovider/context-provide/commandwatcher.cpp	2013-12-12 14:42:23.004994262 +0100
+@@ -23,6 +23,8 @@
+ #include "propertyproxy.h"
+ #include "sconnect.h"
+ 
++#include <unistd.h>
++
+ #include <contextpropertyinfo.h>
+ #include <contextregistryinfo.h>
+ #include <contexttyperegistryinfo.h>
+diff -Naur a/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp b/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp
+--- a/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/libcontextprovider/context-provide/context-provide.cpp	2013-12-12 14:40:27.932423665 +0100
+@@ -21,6 +21,8 @@
+ 
+ #include "commandwatcher.h"
+ 
++#include <unistd.h>
++
+ #include <QCoreApplication>
+ #include <QString>
+ #include <QStringList>
+diff -Naur a/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c b/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c
+--- a/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/libcontextprovider/customer-tests/c-api/cprovidertests.c	2013-12-12 14:42:53.365144817 +0100
+@@ -22,6 +22,8 @@
+ /* for dprintf */
+ #define _GNU_SOURCE
+ 
++#include <unistd.h>
++
+ #include "context_provider.h"
+ #include <stdio.h>
+ #include <glib.h>
+diff -Naur a/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp b/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp
+--- a/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/libcontextprovider/customer-tests/client/client.cpp	2013-12-12 14:40:02.012295120 +0100
+@@ -1,5 +1,7 @@
+ #include "commandwatcher.h"
+ 
++#include <unistd.h>
++
+ #include <QCoreApplication>
+ #include <QDebug>
+ 
+diff -Naur a/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp b/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp
+--- a/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/libcontextsubscriber/cli/context-listen.cpp	2013-12-12 14:40:47.104518716 +0100
+@@ -19,6 +19,8 @@
+  *
+  */
+ 
++#include <unistd.h>
++
+ #include "contextproperty.h"
+ #include "propertylistener.h"
+ #include "commandwatcher.h"
+diff -Naur a/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp b/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp
+--- a/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/libcontextsubscriber/customer-tests/forward-compatible/check-version.cpp	2013-12-12 14:41:58.812874306 +0100
+@@ -19,6 +19,8 @@
+  *
+  */
+ 
++#include <unistd.h>
++
+ #include <QCoreApplication>
+ #include <QDir>
+ #include <QDebug>
+diff -Naur a/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp b/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp
+--- a/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/libcontextsubscriber/src/contextproperty.cpp	2013-12-12 14:41:38.608774108 +0100
+@@ -96,6 +96,8 @@
+     availability, etc.) you should consult the \ref Introspection API.
+ */
+ 
++#include <unistd.h>
++
+ #include "contextproperty.h"
+ #include "propertyhandle.h"
+ #include "sconnect.h"
+diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h b/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h
+--- a/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/sandbox/multithreading-tests/stress-test/thread.h	2013-12-12 14:43:56.725459006 +0100
+@@ -3,6 +3,8 @@
+ 
+ #include <contextproperty.h>
+ 
++#include <unistd.h>
++
+ #include <time.h>
+ #include <QThread>
+ #include <QDebug>
+diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h
+--- a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-only-in-thread/thread.h	2013-12-12 14:44:19.753573189 +0100
+@@ -3,6 +3,8 @@
+ 
+ #include <contextproperty.h>
+ 
++#include <unistd.h>
++
+ #include <QThread>
+ #include <QDebug>
+ 
+diff -Naur a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp
+--- a/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/sandbox/multithreading-tests/wait-for-subscription-thread/main.cpp	2013-12-12 14:44:38.069664015 +0100
+@@ -2,6 +2,8 @@
+ 
+ #include "thread.h"
+ 
++#include <unistd.h>
++
+ #include <QCoreApplication>
+ #include <QThread>
+ 
+diff -Naur a/contextkit-0.5.39/sandbox/wait-test/main.cpp b/contextkit-0.5.39/sandbox/wait-test/main.cpp
+--- a/contextkit-0.5.39/sandbox/wait-test/main.cpp	2011-08-04 12:59:59.000000000 +0200
++++ b/contextkit-0.5.39/sandbox/wait-test/main.cpp	2013-12-12 14:43:33.633344489 +0100
+@@ -1,3 +1,5 @@
++#include <unistd.h>
++
+ #include <QTimer>
+ #include <QDebug>
+ #include <QWaitCondition>
